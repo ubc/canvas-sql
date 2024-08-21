@@ -69,4 +69,4 @@ WITH RECURSIVE account_hierarchy (
 )
 
 
-SELECT * FROM account_hierarchy
+SELECT DISTINCT * FROM account_hierarchy
