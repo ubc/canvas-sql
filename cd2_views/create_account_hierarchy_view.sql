@@ -1,4 +1,4 @@
-CREATE account_hierarchy_view AS 
+CREATE account_hierarchy_vw AS 
 WITH RECURSIVE account_hierarchy (
     root_account_id,
     root_account,
