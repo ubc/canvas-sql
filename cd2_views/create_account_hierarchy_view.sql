@@ -1,4 +1,4 @@
-CREATE account_hierarchy_vw AS 
+CREATE VIEW account_hierarchy_vw AS 
 WITH RECURSIVE account_hierarchy (
     root_account_id,
     root_account,
@@ -65,8 +65,8 @@ WITH RECURSIVE account_hierarchy (
     JOIN
         accounts a ON a.parent_account_id = ah.id
     WHERE
-        ah.level < 6  -- Limit to 5 subaccount levels (subaccount1, subaccount2, subaccount3 ...)
+        ah.level < 5  -- Limit to 5 subaccount levels (subaccount1, subaccount2, subaccount3 ...)
 )
 
 
-SELECT DISTINCT * FROM account_hierarchy
+SELECT * FROM account_hierarchy
