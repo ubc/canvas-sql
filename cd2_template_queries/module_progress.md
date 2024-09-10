@@ -18,8 +18,8 @@ module_workflow_state | The workflow state of the module (e.g. active, unpublish
 module_unlock_at | The date and time when the module is unlocked. | 
 item_position | The position of the item within the module. | 
 item_id | The ID of the item within the module. | This should be the module_item_id.
-item_content_type | The type of content for the item (e.g. |  Assignment |  Page) | 
-item_content_id | The ID of the content based on the type of item | For Assignments |  this is the assignment ID. For subheaders and external URLs |  it's 0.
+item_content_type | The type of content for the item (e.g. Assignment, WikiPage) | 
+item_content_id | The ID of the content based on the type of item | i.e) For Assignments, this is the assignment ID. For subheaders and external URLs the id is 0 (these can only be module items and have no content id).
 item_workflow_state | The workflow state of the item (e.g. active, unpublished) | You could filter to only active to remove unpublished items. 
 item_title | The title of the item. | 
 item_requirement | The requirement type for the item (e.g. min_score) | You could filter to exclude `null` to only include items with active requirements 
