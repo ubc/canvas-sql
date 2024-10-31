@@ -1,4 +1,4 @@
-CREATE VIEW canvas.preferred_email_vw as
+CREATE OR REPLACE VIEW canvas.preferred_email_vw as
 SELECT
   comm1.user_id,
   comm1.path as email
