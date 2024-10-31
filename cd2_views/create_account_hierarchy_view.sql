@@ -1,3 +1,5 @@
+CREATE OR REPLACE VIEW account_hierarchy_vw
+
 WITH RECURSIVE account_hierarchy (
     root_account_id,
     root_account,
